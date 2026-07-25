@@ -2,10 +2,15 @@ from setuptools import setup, find_packages
 
 def get_version():
     """Get the version number from the main module."""
-    with open('src/main.py', 'r') as f:
-        for line in f:
-            if line.startswith('VERSION'):
-                return line.split('=')[1].strip().strip('"')
+    try:
+        with open('src/main.py', 'r') as f:
+            for line in f:
+                if line.startswith('VERSION'):
+                    return line.split('=')[1].strip().strip('"')
+    except FileNotFoundError:
+        print("Error: main.py not found in src directory.")
+    except Exception as e:
+        print(f"Error: {e}")
     return '1.0.0'
 
 setup(
