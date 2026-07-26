@@ -1,29 +1,18 @@
 # .gitignore
+# ignore ruff cache
+.cache/ruff
 
-# ignore node_modules
-node_modules/
+# ignore ruff logs
+.cache/ruff/logs
 
-# ignore build artifacts
-build/
-dist/
+# ignore ruff config
+.cache/ruff/config
 
-# ignore IDE files
-.idea/
-.vscode/
+# ignore ruff cache for specific project
+.cache/ruff/project1
+.cache/ruff/project2
 
-# ignore Docker stuff
-docker-compose.yml
-docker-compose.yaml
-docker/
-
-# ignore Python cache
-__pycache__/
-
-# ignore virtualenv
-venv/
-
-# ignore Ruff cache
-.ruffcache/
-
-# ignore Ruff config
-.ruffconfig
+# ignore other stuff
+*.pyc
+*.log
+*.tmp
