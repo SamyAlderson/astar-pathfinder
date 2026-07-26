@@ -1,15 +1,29 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.env
-*.egg-info/
-dist/
-build/
-.venv/
+# .gitignore
+
+# ignore node_modules
 node_modules/
-target/
-bin/
-obj/
-*.o
-*.so
-*.dylib/
+
+# ignore build artifacts
+build/
+dist/
+
+# ignore IDE files
+.idea/
+.vscode/
+
+# ignore Docker stuff
+docker-compose.yml
+docker-compose.yaml
+docker/
+
+# ignore Python cache
+__pycache__/
+
+# ignore virtualenv
+venv/
+
+# ignore Ruff cache
+.ruffcache/
+
+# ignore Ruff config
+.ruffconfig
