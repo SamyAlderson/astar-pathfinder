@@ -1,16 +1,27 @@
 # .gitignore
 
-# ignore ruff cache
-.cache/
+# Ignore IDE files
+.idea/
 
-# ignore ruff logs
-.ruff.log
+# Ignore VSCode files
+.vscode/
 
-# ignore ruff config
-.ruffconfig
+# Ignore Python cache
+__pycache__/
 
-# ignore ruff cache for specific tool
-.ruff.cache
+# Ignore build artifacts
+build/
 
-# ignore other ruff files
-.ruff/
+# Ignore pip cache
+pip-wheel-wheel/
+
+# Ignore Ruff cache
+.ruffcache/
+
+# Ignore Ruff cache
+.ruffignore
+
+# Ignore other stuff
+*.log
+*.tmp
+*.swp
